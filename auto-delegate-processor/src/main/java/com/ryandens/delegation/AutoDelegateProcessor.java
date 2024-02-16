@@ -42,7 +42,7 @@ public final class AutoDelegateProcessor extends AbstractProcessor {
   private Types typeUtils;
 
   @Override
-  public synchronized void init(final ProcessingEnvironment processingEnv) {
+  public void init(final ProcessingEnvironment processingEnv) {
     filer = processingEnv.getFiler();
     typeUtils = processingEnv.getTypeUtils();
     elementUtils = processingEnv.getElementUtils();
