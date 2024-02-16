@@ -23,7 +23,7 @@ class ExtensionImpl extends AutoDelegate_ExtensionImpl implements Extension {
 
   ExtensionImpl(final Base delegate) {
     super(delegate);
-    myIntegerValue = Integer.valueOf("3").intValue();
+    myIntegerValue = Integer.parseInt("3");
   }
 
   @Override
